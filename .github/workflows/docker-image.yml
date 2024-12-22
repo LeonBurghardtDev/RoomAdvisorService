@@ -33,10 +33,14 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPEN_WEATHER_API_KEY: ${{ secrets.OPEN_WEATHER_API_KEY }}
 
-      # Step 4: Pull the Docker Image from Docker Hub
+      # Step 4: Debugging - List Images Locally
+      - name: List Local Docker Images
+        run: docker images
+
+      # Step 5: Pull Docker Image from Docker Hub
       - name: Pull Docker Image
         run: docker pull leonburghardtdev/roomadvisor:latest
 
-      # Step 5: Inspect the Docker Image
+      # Step 6: Inspect the Docker Image
       - name: Docker Image Inspect
         run: docker image inspect leonburghardtdev/roomadvisor:latest
