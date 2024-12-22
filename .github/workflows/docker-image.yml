@@ -30,7 +30,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v4
         with:
-          context: .
+          context: ./RoomAdvisor
+          dockerfile: ./RoomAdvisor/Dockerfile
           push: true
           tags: username/roomadvisor:latest
         env:
