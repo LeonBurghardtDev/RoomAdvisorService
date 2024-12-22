@@ -40,4 +40,4 @@ jobs:
 
      
       - name: Docker Image Inspect
-        run: docker image inspect username/roomadvisor:latest
+        run: docker image inspect leonburghardtdev/roomadvisor:latest
