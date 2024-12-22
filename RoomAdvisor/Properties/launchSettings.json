@@ -30,11 +30,14 @@
     },
     "Container (Dockerfile)": {
       "commandName": "Docker",
+      "commandLineArgs": "--env-file .env",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
       "environmentVariables": {
         "ASPNETCORE_HTTPS_PORTS": "8081",
-        "ASPNETCORE_HTTP_PORTS": "8080"
+        "ASPNETCORE_HTTP_PORTS": "8080",
+        "GEMINI_API_KEY": "AIzaSyDpfExGxxNFtsYsU3Mm9XNQGTRSKE3Jmps",
+        "OPEN_WEATHER_API_KEY": "ac9eb3a1924d5d4367aab234f56a3338"
       },
       "publishAllPorts": true,
       "useSSL": true
