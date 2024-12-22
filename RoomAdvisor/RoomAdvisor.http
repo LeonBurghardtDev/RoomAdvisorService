@@ -1,0 +1,14 @@
+@RoomAdvisor_HostAddress = http://localhost:5161
+
+GET {{RoomAdvisor_HostAddress}}/api/weather/current?latitude=51.481846&longitude=7.216236
+Accept: application/json
+
+###
+
+POST {{RoomAdvisor_HostAddress}}/api/room/get-advice?latitude=51.481844&longitude=7.216236
+Content-Type: application/json
+
+[
+    { "name": "Bedroom", "temperature": 19.5, "humidity": 60 },
+    { "name": "Kitchen", "temperature": 22.0, "humidity": 40 }
+]
