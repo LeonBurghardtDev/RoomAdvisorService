@@ -33,7 +33,7 @@ jobs:
           context: ./RoomAdvisor
           dockerfile: ./RoomAdvisor/Dockerfile
           push: true
-          tags: username/roomadvisor:latest
+          tags: leonburghardtdev/roomadvisor:latest
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPEN_WEATHER_API_KEY: ${{ secrets.OPEN_WEATHER_API_KEY }}
