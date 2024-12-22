@@ -10,12 +10,11 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Copy project file and restore dependencies
-COPY RoomAdvisor/RoomAdvisor.csproj .
+COPY RoomAdvisor.csproj .
 RUN dotnet restore "RoomAdvisor.csproj"
 
 # Copy the rest of the application code
-COPY RoomAdvisor/ ./RoomAdvisor/
-WORKDIR "/src/RoomAdvisor"
+COPY . .
 RUN dotnet build "RoomAdvisor.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Publish stage
