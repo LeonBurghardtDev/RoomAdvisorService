@@ -33,6 +33,9 @@ jobs:
           context: .
           push: true
           tags: username/roomadvisor:latest
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPEN_WEATHER_API_KEY: ${{ secrets.OPEN_WEATHER_API_KEY }}
 
      
       - name: Docker Image Inspect
