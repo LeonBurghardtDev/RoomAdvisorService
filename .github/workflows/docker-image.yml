@@ -36,6 +36,5 @@ jobs:
       - name: Pull Docker Image
         run: docker pull leonburghardtdev/roomadvisor:latest
 
-      # Step 6: Inspect the Docker Image
       - name: Docker Image Inspect
         run: docker image inspect leonburghardtdev/roomadvisor:latest
