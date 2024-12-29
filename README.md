@@ -1,6 +1,6 @@
 # RoomAdvisor
 
-RoomAdvisor is a lightweight backend service that provides actionable advice for maintaining optimal indoor air quality and heating conditions. Based on real-time room data (e.g., temperature and humidity) and outdoor weather data, it recommends actions like ventilation (`lüften`) or heating adjustments (`heizen`). This service is designed to work as a standalone backend but can be easily integrated into apps or smart home systems for automated decision-making.
+RoomAdvisor is a lightweight backend service that provides actionable advice for maintaining optimal indoor air quality and heating conditions. Based on real-time room data (e.g., temperature and humidity) and outdoor weather data, it recommends actions like ventilation or heating adjustments. This service is designed to work as a standalone backend but can be easily integrated into apps or smart home systems for automated decision-making.
 
 This project includes a ready-to-use Docker setup, making deployment and development seamless. Whether you're building a mobile app, enhancing smart home automation, or experimenting with backend development, RoomAdvisor offers a flexible and customizable foundation for indoor climate recommendations.
 
@@ -73,7 +73,7 @@ Content-Type: application/json
 ### 1. Fork and Clone the Repository
 Fork the repository to your GitHub account and clone it to your local machine:
 ```bash
-git clone https://github.com/<your-username>/roomadvisor.git
+git clone https://github.com/LeonBurghardtDev/roomadvisor.git
 cd roomadvisor
 ```
 
